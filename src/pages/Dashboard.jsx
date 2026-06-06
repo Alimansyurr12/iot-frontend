@@ -3,7 +3,7 @@ import api from '../services/api'
 import AlertNotification from '../components/AlertNotification'
 import MonitoringChart from '../components/MonitoringChart'
 
-const ONLINE_TIMEOUT_MS = 10000
+const ONLINE_TIMEOUT_MS = 30000
 
 const DEFAULT_CONTROL = {
   heater: 'OFF',
@@ -190,7 +190,7 @@ function Dashboard() {
       }
 
       if (espStatus === 'OFFLINE') {
-        showNotification('error', 'ESP32 offline. Data sensor tidak diterima dalam 10 detik terakhir.')
+        showNotification('error', 'ESP32 offline. Data sensor tidak diterima dalam 30 detik terakhir.')
       }
     }
 
