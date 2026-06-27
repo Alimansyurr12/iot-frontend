@@ -2,7 +2,8 @@ import axios from 'axios'
 
 const BASE_URL =
   import.meta.env.VITE_API_BASE_URL ||
-  'https://iot-backend-production-3a02.up.railway.app/api'
+  'https://lightsteelblue-owl-734701.hostingersite.com/api'
+
 
 const api = axios.create({
   baseURL: BASE_URL,

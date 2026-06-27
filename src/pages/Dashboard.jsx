@@ -3,7 +3,7 @@ import api from '../services/api'
 import AlertNotification from '../components/AlertNotification'
 import MonitoringChart from '../components/MonitoringChart'
 
-const ONLINE_TIMEOUT_MS = 30000
+const ONLINE_TIMEOUT_MS = 100000
 
 const DEFAULT_CONTROL = {
   heater: 'OFF',
